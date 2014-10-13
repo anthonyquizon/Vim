@@ -19,5 +19,3 @@ vnoremap <right> <nop>
 inoremap <esc> <nop>
 
 
-"TODO
-" Unite key bindings
