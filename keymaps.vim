@@ -18,4 +18,6 @@ vnoremap <right> <nop>
 
 inoremap <esc> <nop>
 
-
+"stay selected when visual mode indenting
+vmap < <gv
+vmap > >gv

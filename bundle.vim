@@ -43,15 +43,22 @@ NeoBundle 'Shougo/vimproc', { 'build' : {
     \}
 
 NeoBundleLazy 'Shougo/unite.vim', {
-            \ 'autoload' : {
-            \   'commands' : [{'name' : 'Unite'},
-            \       'UniteWithBufferDir']
-            \   }
-            \ }
+			\ 'rev' : '3787e5',
+			\ 'autoload' : {
+			\   'commands' : [{'name' : 'Unite'},
+			\       'UniteWithBufferDir']
+			\   }
+			\ }
 
 NeoBundle '29decibel/codeschool-vim-theme'
-NeoBundle 'tpope/vim-vinegar'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'dag/vim2hs'
 
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'scrooloose/nerdcommenter'
 
 " === INCLUDES ===
-source ~/.vim/config/bundles/unite.vim
+"source ~/.vim/config/bundles/unite.vim
+source ~/.vim/config/bundles/NERDTree.vim
+source ~/.vim/config/bundles/NERDCommenter.vim
+source ~/.vim/config/bundles/vim-multiple-cursors.vim
