@@ -51,3 +51,7 @@ NeoBundleLazy 'Shougo/unite.vim', {
 
 NeoBundle '29decibel/codeschool-vim-theme'
 NeoBundle 'tpope/vim-vinegar'
+
+
+" === INCLUDES ===
+source ~/.vim/config/bundles/unite.vim
