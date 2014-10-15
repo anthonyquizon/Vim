@@ -18,9 +18,31 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'kien/ctrlp.vim'
+"NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 
+NeoBundle 'Shougo/vimproc', { 'build' : {
+    \       'mac': 'make -f make_mac.mak',
+    \       'unix' : 'make -f make_unix.mak',
+    \   },
+    \}
+
+NeoBundleLazy 'Shougo/unite.vim', {
+			\ 'autoload' : {
+			\   'commands' : [{'name' : 'Unite'},
+			\       'UniteWithBufferDir']
+			\   }
+			\ }
+
+NeoBundle 'Shougo/vimfiler.vim'
+NeoBundle 'Shougo/neomru.vim'
+
+NeoBundle '29decibel/codeschool-vim-theme'
+"NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'dag/vim2hs'
+
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'scrooloose/nerdcommenter'
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
@@ -35,30 +57,10 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
-"NeoBundle Plugins
-NeoBundle 'Shougo/vimproc', { 'build' : {
-    \       'mac': 'make -f make_mac.mak',
-    \       'unix' : 'make -f make_unix.mak',
-    \   },
-    \}
-
-NeoBundleLazy 'Shougo/unite.vim', {
-			\ 'rev' : '3787e5',
-			\ 'autoload' : {
-			\   'commands' : [{'name' : 'Unite'},
-			\       'UniteWithBufferDir']
-			\   }
-			\ }
-
-NeoBundle '29decibel/codeschool-vim-theme'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'dag/vim2hs'
-
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'scrooloose/nerdcommenter'
 
 " === INCLUDES ===
-"source ~/.vim/config/bundles/unite.vim
-source ~/.vim/config/bundles/NERDTree.vim
+source ~/.vim/config/bundles/unite.vim
+"source ~/.vim/config/bundles/NERDTree.vim
 source ~/.vim/config/bundles/NERDCommenter.vim
 source ~/.vim/config/bundles/vim-multiple-cursors.vim
+source ~/.vim/config/bundles/VimFiler.vim
