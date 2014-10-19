@@ -18,7 +18,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
-"NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 
 NeoBundle 'Shougo/vimproc', { 'build' : {
@@ -34,17 +33,29 @@ NeoBundleLazy 'Shougo/unite.vim', {
 			\   }
 			\ }
 
-NeoBundle 'Shougo/vimfiler.vim'
+"NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'Shougo/neomru.vim'
 
 NeoBundle '29decibel/codeschool-vim-theme'
-"NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'dag/vim2hs'
+NeoBundle 'scrooloose/nerdtree'
 
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'scrooloose/nerdcommenter'
-" You can specify revision/branch/tag.
-NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'godlygeek/tabular'
+
+NeoBundle 'scrooloose/syntastic'
+
+"haskell plugins
+"NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'dag/vim2hs'
+NeoBundle 'bitc/vim-hdevtools'
+NeoBundle 'jaspervdj/stylish-haskell'
+
+"Idris
+NeoBundle 'idris-hackers/idris-vim'
+
 
 " Required:
 call neobundle#end()
@@ -60,7 +71,12 @@ NeoBundleCheck
 
 " === INCLUDES ===
 source ~/.vim/config/bundles/unite.vim
-"source ~/.vim/config/bundles/NERDTree.vim
+source ~/.vim/config/bundles/NERDTree.vim
 source ~/.vim/config/bundles/NERDCommenter.vim
 source ~/.vim/config/bundles/vim-multiple-cursors.vim
-source ~/.vim/config/bundles/VimFiler.vim
+"source ~/.vim/config/bundles/VimFiler.vim
+source ~/.vim/config/bundles/neomru.vim
+source ~/.vim/config/bundles/vim-hdevtools.vim
+source ~/.vim/config/bundles/stylish-haskell.vim
+"source ~/.vim/config/bundles/ghcmod.vim
+

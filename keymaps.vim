@@ -21,3 +21,14 @@ inoremap <esc> <nop>
 "stay selected when visual mode indenting
 vmap < <gv
 vmap > >gv
+
+"Set current buffer to directory
+nnoremap ,cd :cd %:p:h<CR>
+
+" tab navigation like browser
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-tab>   :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+inoremap <C-tab>   <Esc>:tabnext<CR>i
+inoremap <C-t>     <Esc>:tabnew<CR>
