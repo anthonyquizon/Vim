@@ -1,5 +1,6 @@
 
 inoremap jk <Esc>
+vnoremap <Space> <Esc>
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>

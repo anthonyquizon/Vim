@@ -4,4 +4,4 @@ map « :NERDTree
 
 let g:NERDTreeMapActivateNode = 'l'
 let g:NERDTreeMapCloseDir = 'h'
-
+let NERDTreeIgnore = ['\.pyc$', '\.ibc$']
