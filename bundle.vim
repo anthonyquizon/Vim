@@ -46,15 +46,22 @@ NeoBundle 'Shougo/vimshell'
 NeoBundle 'godlygeek/tabular'
 
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'mattn/emmet-vim'
 
 "haskell plugins
 "NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'dag/vim2hs'
 NeoBundle 'bitc/vim-hdevtools'
 NeoBundle 'jaspervdj/stylish-haskell'
+NeoBundle 'eagletmt/neco-ghc'
 
 "Idris
 NeoBundle 'idris-hackers/idris-vim'
+
+"Purescript
+NeoBundle 'raichoo/purescript-vim'
+
+NeoBundle 'leafgarland/typescript-vim'
 
 
 " Required:
@@ -79,4 +86,5 @@ source ~/.vim/config/bundles/neomru.vim
 source ~/.vim/config/bundles/vim-hdevtools.vim
 source ~/.vim/config/bundles/stylish-haskell.vim
 "source ~/.vim/config/bundles/ghcmod.vim
+source ~/.vim/config/bundles/neocomplete.vim
 
