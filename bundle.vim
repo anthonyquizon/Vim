@@ -87,4 +87,5 @@ source ~/.vim/config/bundles/vim-hdevtools.vim
 source ~/.vim/config/bundles/stylish-haskell.vim
 "source ~/.vim/config/bundles/ghcmod.vim
 source ~/.vim/config/bundles/neocomplete.vim
+source ~/.vim/config/bundles/vim2hs.vim
 
