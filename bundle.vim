@@ -49,9 +49,9 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'mattn/emmet-vim'
 
 "haskell plugins
-"NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'dag/vim2hs'
-NeoBundle 'bitc/vim-hdevtools'
+"NeoBundle 'bitc/vim-hdevtools'
 NeoBundle 'jaspervdj/stylish-haskell'
 NeoBundle 'eagletmt/neco-ghc'
 
@@ -63,12 +63,19 @@ NeoBundle 'raichoo/purescript-vim'
 
 NeoBundle 'leafgarland/typescript-vim'
 
+NeoBundle 'othree/html5.vim'
+
+NeoBundle 'docker/docker'
+NeoBundle 'bendavis78/vim-polymer'
+
+NeoBundle 'groenewege/vim-less'
+NeoBundle 'digitaltoad/vim-jade'
 
 " Required:
 call neobundle#end()
 
 " Required:
-filetype plugin indent on
+"filetype plugin indent on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.

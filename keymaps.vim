@@ -33,3 +33,10 @@ nnoremap <C-t>     :tabnew<CR>
 inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
+
+nnoremap <Leader>T :set softtabstop=4<CR>
+nnoremap <Leader>t :set softtabstop=2<CR>
+
+nnoremap <Leader>e :setlocal spell spelllang=en_us<CR>
+nnoremap <Leader>E :set nospell<CR>
+
