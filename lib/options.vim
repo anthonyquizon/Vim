@@ -1,3 +1,4 @@
+
 set nocompatible
 set expandtab
 set tabstop=4
@@ -15,7 +16,6 @@ set undofile
 set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
-
 " The Silver Searcher
 if executable('ag')
   " Use ag over grep
@@ -27,10 +27,6 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
-
-source ~/.vim/config/bundle.vim
-source ~/.vim/config/keymaps.vim
-source ~/.vim/config/theme.vim
 
 autocmd BufRead,BufNewFile *.jade filetype indent off
 autocmd BufRead,BufNewFile *.html filetype indent off

@@ -1,14 +1,13 @@
-
 "NeoBundle Scripts-----------------------------
 if has('vim_starting')
   set nocompatible               " Be iMproved
 
   " Required:
-  set runtimepath+=/Users/anthony/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 " Required:
-call neobundle#begin(expand('/Users/anthony/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -20,11 +19,11 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'flazz/vim-colorschemes'
 
-NeoBundle 'Shougo/vimproc', { 'build' : {
-    \       'mac': 'make -f make_mac.mak',
-    \       'unix' : 'make -f make_unix.mak',
-    \   },
-    \}
+"NeoBundle 'Shougo/vimproc', { 'build' : {
+    "\       'mac': 'make -f make_mac.mak',
+    "\       'unix' : 'make -f make_unix.mak',
+    "\   },
+    "\}
 
 NeoBundleLazy 'Shougo/unite.vim', {
 			\ 'autoload' : {
@@ -89,16 +88,15 @@ NeoBundleCheck
 
 
 " === INCLUDES ===
-source ~/.vim/config/bundles/unite.vim
-source ~/.vim/config/bundles/NERDTree.vim
-source ~/.vim/config/bundles/NERDCommenter.vim
-source ~/.vim/config/bundles/vim-multiple-cursors.vim
-"source ~/.vim/config/bundles/VimFiler.vim
-source ~/.vim/config/bundles/neomru.vim
-source ~/.vim/config/bundles/vim-hdevtools.vim
-source ~/.vim/config/bundles/stylish-haskell.vim
-source ~/.vim/config/bundles/ghcmod-vim.vim
-"source ~/.vim/config/bundles/neocomplete.vim
-source ~/.vim/config/bundles/vim2hs.vim
-"source ~/.vim/config/bundles/syntastic.vim
-
+runtime lib/bundles/unite.vim
+runtime lib/bundles/NERDTree.vim
+runtime lib/bundles/NERDCommenter.vim
+runtime lib/bundles/vim-multiple-cursors.vim
+runtime lib/bundles/neomru.vim
+runtime lib/bundles/vim-hdevtools.vim
+runtime lib/bundles/stylish-haskell.vim
+runtime lib/bundles/ghcmod-vim.vim
+runtime lib/bundles/vim2hs.vim
+"runtime lib/bundles/syntastic.vim
+"runtime lib/bundles/VimFiler.vim
+"runtime lib/bundles/neocomplete.vim
