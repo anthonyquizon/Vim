@@ -42,16 +42,16 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'scrooloose/nerdcommenter'
 
-NeoBundle 'Shougo/vimshell'
-NeoBundle 'godlygeek/tabular'
+"NeoBundle 'Shougo/vimshell'
+"NeoBundle 'godlygeek/tabular'
 
-NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'scrooloose/syntastic'
 NeoBundle 'mattn/emmet-vim'
 
 "haskell plugins
 NeoBundle 'eagletmt/ghcmod-vim'
-NeoBundle 'dag/vim2hs'
 "NeoBundle 'bitc/vim-hdevtools'
+NeoBundle 'dag/vim2hs'
 NeoBundle 'jaspervdj/stylish-haskell'
 NeoBundle 'eagletmt/neco-ghc'
 
@@ -61,21 +61,26 @@ NeoBundle 'idris-hackers/idris-vim'
 "Purescript
 NeoBundle 'raichoo/purescript-vim'
 
-NeoBundle 'leafgarland/typescript-vim'
-
 NeoBundle 'othree/html5.vim'
 
-NeoBundle 'docker/docker'
-NeoBundle 'bendavis78/vim-polymer'
+"NeoBundle 'docker/docker'
+"NeoBundle 'bendavis78/vim-polymer'
 
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'digitaltoad/vim-jade'
+
+"NeoBundle 'kshenoy/vim-signature'
+"NeoBundle 'tomtom/quickfixsigns_vim'
+NeoBundle 'dhruvasagar/vim-markify'
+
+NeoBundle 'milkypostman/vim-togglelist'
+"NeoBundle 'lambdatoast/elm.vim'
 
 " Required:
 call neobundle#end()
 
 " Required:
-"filetype plugin indent on
+filetype plugin indent on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
@@ -92,7 +97,8 @@ source ~/.vim/config/bundles/vim-multiple-cursors.vim
 source ~/.vim/config/bundles/neomru.vim
 source ~/.vim/config/bundles/vim-hdevtools.vim
 source ~/.vim/config/bundles/stylish-haskell.vim
-"source ~/.vim/config/bundles/ghcmod.vim
-source ~/.vim/config/bundles/neocomplete.vim
+source ~/.vim/config/bundles/ghcmod-vim.vim
+"source ~/.vim/config/bundles/neocomplete.vim
 source ~/.vim/config/bundles/vim2hs.vim
+"source ~/.vim/config/bundles/syntastic.vim
 

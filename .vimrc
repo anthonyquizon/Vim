@@ -1,15 +1,14 @@
-
-
+set nocompatible
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 "set shiftround  "Round indent to nearest shiftwidth multiple
 set noswapfile
-set smartindent
+"set smartindent
+set ai
 
 filetype on
-filetype plugin on
 
 set undodir=~/.vim/undodir
 set undofile
@@ -33,3 +32,12 @@ source ~/.vim/config/bundle.vim
 source ~/.vim/config/keymaps.vim
 source ~/.vim/config/theme.vim
 
+autocmd BufRead,BufNewFile *.jade filetype indent off
+autocmd BufRead,BufNewFile *.html filetype indent off
+
+autocmd FileType jade setlocal indentkeys-=*<Return>
+autocmd FileType html setlocal indentkeys-=*<Return>
+
+au BufReadPost *.elm set syntax=haskell
+au BufReadPost *.lvl set syntax=yaml
+au BufReadPost *.inc set syntax=yaml
