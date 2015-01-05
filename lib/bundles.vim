@@ -19,11 +19,14 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'flazz/vim-colorschemes'
 
-"NeoBundle 'Shougo/vimproc', { 'build' : {
-    "\       'mac': 'make -f make_mac.mak',
-    "\       'unix' : 'make -f make_unix.mak',
-    "\   },
-    "\}
+NeoBundle 'Shougo/vimproc', { 'build' : {
+    \       'mac': 'make -f make_mac.mak',
+    \       'unix' : 'make -f make_unix.mak',
+    \       'linux' : 'make'
+    \   },
+    \}
+
+NeoBundle 'Shougo/vimproc'
 
 NeoBundleLazy 'Shougo/unite.vim', {
 			\ 'autoload' : {

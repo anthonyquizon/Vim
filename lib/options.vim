@@ -9,6 +9,8 @@ set noswapfile
 "set smartindent
 set ai
 
+set backspace=indent,eol,start
+
 filetype on
 
 set undodir=~/.vim/undodir
