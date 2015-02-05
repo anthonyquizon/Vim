@@ -31,6 +31,7 @@ if executable('ag')
 endif
 
 autocmd BufRead,BufNewFile *.jade filetype indent off
+autocmd BufRead,BufNewFile *.sass filetype indent off
 autocmd BufRead,BufNewFile *.html filetype indent off
 
 autocmd FileType jade setlocal indentkeys-=*<Return>

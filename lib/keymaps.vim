@@ -26,6 +26,12 @@ vmap > >gv
 "Set current buffer to directory
 nnoremap ,cd :cd %:p:h<CR>
 
+"tabs
+nnoremap tc :tabc<CR>
+nnoremap tn :tabe<CR>
+nnoremap t> gt
+nnoremap t< gT
+
 " tab navigation like browser
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>

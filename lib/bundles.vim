@@ -17,7 +17,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
+
+" Colour Schemes
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'w0ng/vim-hybrid'
 
 NeoBundle 'Shougo/vimproc', { 'build' : {
     \       'mac': 'make -f make_mac.mak',
@@ -38,7 +41,6 @@ NeoBundleLazy 'Shougo/unite.vim', {
 "NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'Shougo/neomru.vim'
 
-NeoBundle '29decibel/codeschool-vim-theme'
 NeoBundle 'scrooloose/nerdtree'
 
 NeoBundle 'terryma/vim-multiple-cursors'
@@ -51,7 +53,8 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'mattn/emmet-vim'
 
 "haskell plugins
-NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'eagletmt/ghcmod-vim', 'master'
+    
 "NeoBundle 'bitc/vim-hdevtools'
 NeoBundle 'dag/vim2hs'
 NeoBundle 'jaspervdj/stylish-haskell'
