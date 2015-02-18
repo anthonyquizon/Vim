@@ -29,8 +29,8 @@ nnoremap ,cd :cd %:p:h<CR>
 "tabs
 nnoremap tc :tabc<CR>
 nnoremap tn :tabe<CR>
-nnoremap t> gt
-nnoremap t< gT
+nnoremap > gt
+nnoremap < gT
 
 " tab navigation like browser
 nnoremap <C-S-tab> :tabprevious<CR>
