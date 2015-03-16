@@ -1,0 +1,2 @@
+au BufRead * RainbowParenthesesToggle
+

@@ -81,6 +81,13 @@ NeoBundle 'dhruvasagar/vim-markify'
 NeoBundle 'milkypostman/vim-togglelist'
 "NeoBundle 'lambdatoast/elm.vim'
 
+"Clojure
+NeoBundle 'tpope/vim-fireplace'
+NeoBundle 'guns/vim-sexp'
+NeoBundle 'tpope/vim-sexp-mappings-for-regular-people'
+NeoBundle 'kien/rainbow_parentheses.vim'
+
+
 " Required:
 call neobundle#end()
 
@@ -103,6 +110,7 @@ runtime lib/bundles/vim-hdevtools.vim
 runtime lib/bundles/stylish-haskell.vim
 runtime lib/bundles/ghcmod-vim.vim
 runtime lib/bundles/vim2hs.vim
+runtime lib/bundles/rainbow-parentheses.vim
 "runtime lib/bundles/syntastic.vim
 "runtime lib/bundles/VimFiler.vim
 "runtime lib/bundles/neocomplete.vim
